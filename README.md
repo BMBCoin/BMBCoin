@@ -1,35 +1,3 @@
-source
-Official contract address BMBCoin ERC20 And BMB based on the Ethereum ERC20 network and Binance Smart Chain (BSC)
-
-BMBCoin Information
-BMB Coin Details About Contract And Token Details 
-• BMB Information 
-• Name: BMBCoin 
-• Symbol: BMB
-• Decimals:18 
-• Total Supply: 10,000,000,000.00 BMB 
-• 1 BMB = $0.1
-BMB based on the Ethereum ERC20 network and Binance Smart Chain (BSC)
-
-
-BMB based on the Ethereum ERC20 network
-
-Explorer Smart contract Address: https://etherscan.io/token/0x3d9da8fe44ccf682bb1bd974bb664bef099ef813
-
-BMBCoin: Deployer Pre sale contract Address: https://etherscan.io/address/0x0c329ff2e9e48e85b4bb24164b4225c4aec36854
-
-Transaction Details: https://etherscan.io/tx/0x1b0b3bfe771f0b2f065d7a03951949e7ca54712bfbabac5fd23440bd33010534
-
-BMBCoin based on the binance smart chain BSC network
-
-Contract information BMBCoin Smart Contract
-https://bscscan.com/token/0x3d9da8fe44ccf682bb1bd974bb664bef099ef813
-
-Deployer address for Pre sale BMBCoin.
-https://bscscan.com/address/0x0c329ff2e9e48e85b4bb24164b4225c4aec36854
-
-
-
 /**
  *Submitted for verification at Etherscan.io on 2021-07-24
 */
@@ -50,12 +18,7 @@ pragma solidity ^0.4.24;
 // Enjoy. BMBCoin.org
 //
 // (c) by Moritz Neto with BokkyPooBah / Bok Consulting Pty Ltd Au 2021. The MIT Licence.
-// ----------------------------------------------------------------------------
 
-
-// ----------------------------------------------------------------------------
-// Safe maths
-// ----------------------------------------------------------------------------
 contract SafeMath {
     function safeAdd(uint a, uint b) public pure returns (uint c) {
         c = a + b;
@@ -74,12 +37,6 @@ contract SafeMath {
         c = a / b;
     }
 }
-
-
-// ----------------------------------------------------------------------------
-// ERC Token Standard #20 Interface
-// https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
-// ----------------------------------------------------------------------------
 contract ERC20Interface {
     function totalSupply() public constant returns (uint);
     function balanceOf(address tokenOwner) public constant returns (uint balance);
@@ -91,21 +48,9 @@ contract ERC20Interface {
     event Transfer(address indexed from, address indexed to, uint tokens);
     event Approval(address indexed tokenOwner, address indexed spender, uint tokens);
 }
-
-
-// ----------------------------------------------------------------------------
-// Contract function to receive approval and execute function in one call
-//
-// Borrowed from MiniMeToken
-// ----------------------------------------------------------------------------
 contract ApproveAndCallFallBack {
     function receiveApproval(address from, uint256 tokens, address token, bytes data) public;
 }
-
-
-// ----------------------------------------------------------------------------
-// Owned contract
-// ----------------------------------------------------------------------------
 contract Owned {
     address public owner;
     address public newOwner;
