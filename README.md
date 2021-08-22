@@ -1,13 +1,3 @@
-BMBCoin Information
-BMB Coin Details About Contract And Token Details 
-• BMB Information 
-• Name: BMBCoin 
-• Symbol: BMB
-• Decimals:18 
-• Total Supply: 10,000,000,000.00 BMB 
-• 1 BMB = $0.1
-BMB based on the Ethereum ERC20 network and Binance Smart Chain (BSC)
-
 
 BMB based on the Ethereum ERC20 network
 
